@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import { WrappedApp } from './App';
+import { WrappedApp } from '@/App';
 
 test('Renders PAN KAWKA in h1 tag', () => {
   const { getByText } = render(<WrappedApp />);
