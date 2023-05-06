@@ -1,9 +1,16 @@
 import { render, screen } from '@testing-library/react';
+import { describe, it } from 'vitest';
 
-import { WrappedApp } from '@/App';
+import { WrappedApp } from './App';
 
-test('Renders PAN KAWKA in h1 tag', () => {
-  const { getByText } = render(<WrappedApp />);
-  console.log(getByText);
-  // expect(screen.getByText(/PAN KAWKA/i)).toBeInTheDocument();
+describe('App', () => {
+  it('renders PAN KAWKA in h1 tag', () => {
+    // ARRANGE
+    render(<WrappedApp />);
+    // ACT
+    // EXPECT
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(
+      'PAN KAWKA'
+    );
+  });
 });
