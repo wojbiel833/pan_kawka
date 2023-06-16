@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  imgTumska: '',
-  imgKok: '',
+  imgTumska: 'https://i.ibb.co/D1cD5g9/pexels-pixabay-260922.jpg',
+  imgKok: 'https://i.ibb.co/SngNG18/received-482248093749792.jpg',
 };
 
 const headerSlice = createSlice({
@@ -11,6 +11,6 @@ const headerSlice = createSlice({
   reducers: {},
 });
 
-// console.log(headerSlice);
+console.log(headerSlice);
 
 export default headerSlice.reducer;

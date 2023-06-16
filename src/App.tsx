@@ -4,8 +4,8 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 
-import Navbar from './features/navbar/Navbar';
-import Header from './features/header/Header';
+import Navbar from './features/Navbar/Navbar';
+import Header from './features/Header/Header';
 
 import { store } from './app/store';
 

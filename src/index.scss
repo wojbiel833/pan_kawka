@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Condensed&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.header {
+  .options {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 130%;
+    top: 102px;
+    bottom: 0;
+    left: -15%;
+    position: absolute;
+    z-index: 999;
+
+    a:-webkit-any-link {
+      color: -webkit-link;
+      cursor: pointer;
+      text-decoration: underline;
+
+      div {
+        display: block;
+        width: 100%;
+      }
+
+      .header_pic {
+        overflow: hidden;
+        max-width: 85%;
+        width: 50%;
+        height: 100%;
+        display: inline-block;
+        color: white;
+        transition: filter 0.2s, color 0.2s;
+      }
+
+      .header_text {
+        font-family: 'Lobster', cursive;
+        text-shadow: 5px 5px 8px #000000;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-left: 5%;
+        margin-right: 5%;
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+#header_pic_tumska {
+  clip-path: polygon(0 0, 100% 0, 59% 100%, 0 100%);
+  background: url(https://i.ibb.co/D1cD5g9/pexels-pixabay-260922.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: -15%;
+  left: 10%;
+  position: relative;
+  float: left;
+}
+
+#header_pic_kok {
+  position: relative;
+  clip-path: polygon(41% 0, 100% 0, 100% 100%, 0 100%);
+  left: -10%;
+  background: url(https://i.ibb.co/SngNG18/received-482248093749792.jpg);
+  background-size: cover;
+  text-align: right;
+  float: right;
+}
+
+#header_text_tumska {
+  top: 5%;
+  position: relative;
+}
+
+#header_text_kok {
+  bottom: 5%;
+  right: 2%;
+  position: absolute;
+}

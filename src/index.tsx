@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import { WrappedApp } from './App';
 
-import './index.css';
+import './index.scss';
 
 const container = document.getElementById('root');
 let root;

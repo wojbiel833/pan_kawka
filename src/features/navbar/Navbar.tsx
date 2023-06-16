@@ -13,7 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import Container from '@mui/material/Container';
 
-export default function MenuAppBar() {
+export default function Navbar() {
   const [auth, setAuth] = React.useState(true);
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
@@ -56,7 +56,13 @@ export default function MenuAppBar() {
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-              Photos
+              <a href="logo">
+                <img
+                  className="logo"
+                  src="/src/logos/whiteLogo.svg"
+                  alt="logo"
+                />
+              </a>
             </Typography>
             {auth && (
               <div>

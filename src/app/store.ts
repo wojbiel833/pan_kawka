@@ -1,5 +1,5 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import headerSlice from '../features/header/headerSlice';
+import headerSlice from '../features/Header/headerSlice';
 
 export const store = configureStore({
   reducer: {
